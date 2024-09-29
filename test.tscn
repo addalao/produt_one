@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c54auddpiptxo"]
+
+[ext_resource type="PackedScene" uid="uid://dajdiheqp1bmo" path="res://widget/user_2d.tscn" id="1_8mka7"]
+[ext_resource type="PackedScene" uid="uid://bh0oa366afuaq" path="res://widget/wall.tscn" id="1_s6y2p"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-172, 1528)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_s6y2p")]
+position = Vector2(679, 426)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_8mka7")]
+position = Vector2(814, 208)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("1_s6y2p")]
+position = Vector2(1071, 426)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("1_s6y2p")]
+position = Vector2(496, -305)
+rotation = 1.5708
+group_name = "wall1"
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("1_s6y2p")]
+position = Vector2(1006, -302)
+rotation = 1.5708
+group_name = "wall2"
